@@ -9,7 +9,7 @@
 
 body{
     min-height: 100vh;
-    background: linear-gradient(135deg,#ffffff 40%,#c6bed1 50%);
+    background: linear-gradient(135deg,#ffffff ,#c8c6ba);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,10 +17,11 @@ body{
     
 }
 
-/* nav{
-    /* position: sticky; */
-    /* font-size: 60px; */
-/* } */
+ nav{
+    border-bottom: 2px;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+ } 
 
 nav ul {
     width: 100%;
