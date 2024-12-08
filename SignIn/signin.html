@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignIn</title>
     <link rel="stylesheet" href="style.css">
+    <script type ="text/javascript" src="validation.js" defer></script>
 </head>
 <body>
     <script
@@ -14,28 +15,30 @@
   </head>
   <body>
     <div class="container">
-      <div class="form-box">
+      <div class="form-box" id="form">
         <h1 id="title">Sign In</h1>
+        <p id =error-message></p>
         <h2 id="text">To Create a New Account</h2>
         <form>
 
             <div class="input-field">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" id="email">
             </div>
 
             <div class="input-field">
               <i class="fa-solid fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" id="password">
             </div>
             <div class="btn-field">
-              <button type="button" id="signinBtn">Sign In</button>
+              <button type="submit" id="signinBtn">Sign In</button>
             </div>
             <p class="frgt">Sign In Using :<a href="#"></a></p>
             <div class="logos">
             <i class="fa-brands fa-google"></i>
             <i class="fa-brands fa-github"></i>
           </div>
+          <p>New Here? <a href="index.html">SignUp</a></p>
             
             
           </div>

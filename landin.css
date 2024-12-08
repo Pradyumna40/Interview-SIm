@@ -215,4 +215,7 @@ footer h3{
     .sidebar{
         width: 100%;
     }
+    .hero h1{
+        font-size: 65px;
+    }
 }

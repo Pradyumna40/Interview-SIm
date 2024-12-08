@@ -7,31 +7,33 @@
   <link rel="stylesheet" href="style.css">
   <title>SignUp</title>
   <script src="https://kit.fontawesome.com/8e1bae3994.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="validation.js" defer></script>
 </head>
 
 <body>
   <div class="container">
-    <div class="form-box">
+    <div class="form-box" id="form">
       <h1 id="title">Sign Up</h1>
+      <p id="error-message"></p>
       <h2 id="text">To Create a New Account</h2>
       <form>
-        <div class="input-group">
-          <div class="input-field" id="nameField">
+        <!-- <div class="input-group"> -->
+          <div class="input-field">
             <i class="fa-solid fa-user"></i>
-            <input type="text" placeholder="Username" />
+            <input type="text" placeholder="Username" id="nameField">
           </div>
 
           <div class="input-field">
             <i class="fa-solid fa-envelope"></i>
-            <input type="email" placeholder="Email" />
+            <input type="email" placeholder="Email" id="email">
           </div>
 
           <div class="input-field">
             <i class="fa-solid fa-lock"></i>
-            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Password" id="password">
           </div>
           <div class="btn-field">
-            <button type="button" id="signupBtn">Sign Up</button>
+            <button type="submit">Sign Up</button>
           </div>
           <p class="frgt">Already have an account? <a href="signin.html">Login here</a></p>
 
@@ -42,7 +44,7 @@
     </form>
   </div>
   </div>
-
+     
 
 </body>
 
