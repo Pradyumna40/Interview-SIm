@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script
+      src="https://kit.fontawesome.com/8e1bae3994.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1 id="title">Sign In</h1>
+        <h2 id="text">To Create a New Account</h2>
+        <form>
+
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <div class="btn-field">
+              <button type="button" id="signinBtn">Sign In</button>
+            </div>
+            <p class="frgt">Sign In Using :<a href="#"></a></p>
+            <div class="logos">
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+            
+            
+          </div>
+          
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('signinBtn').addEventListener('click',()=>{
+        window.location.href='/Dashboard/dashboard.html';
+      });
+    </script>
+</body>
+</html>

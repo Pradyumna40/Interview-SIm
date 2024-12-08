@@ -29,9 +29,12 @@
 }
 .form-box h1 {
     font-size: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     color: black;
     position: relative;
+}
+#text{
+    font-size: 20px;
 }
 
 .form-box h1::after
@@ -73,26 +76,32 @@ input{
 
 form p {
     text-align: center;
-    font-size:13px ;
+    font-size:18px ;
 }
 
 form p a {
     text-decoration: none;
     color: #3c00a0;
 }
+
+form p a:hover{
+    
+    text-decoration: underline;
+}
 .btn-field {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: transparent;
 }
 
 .btn-field button{
     flex-basis: 48%;
-    background: #4d4d4d;
+    background:#eaeaea;
     color: black;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 3px;
     border: 0;
     outline: 0;
     cursor: pointer;
@@ -104,35 +113,44 @@ form p a {
     height: 280px;
 }
 
-.btn-field button.disable {
-    background:#eaeaea ;
-    color: #555;
-}
+
 .form-box h2 {
     font-size: medium;
     margin: 2px 15px ;
     font-weight: lighter;
 }
-.google{
-    margin-top: 5px;
-    display: none;
+
+
+.frgt{
+    margin-top: 20px;
+    font-size: 20px;
 }
 
-.icon 
-{
-    margin-top: 10px;
-    color: black;
-    
+.logos{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+   
 }
-
-.icon a{
-    text-decoration: none;
-}
-.icon:hover {
-    color: #FBBC04;
-    transition: 0.5s ease-out;
-    transform: scale(1.2);
+.logos:hover{
     cursor: pointer;
+}
+.fa-google{
+    color: #F4B400;
+}
+.fa-github{
+    color: #333;
+}
+.fa-google:hover{
+    transition:0.5s ease-in;
+    transform: scale(1.1);
+}
+.fa-github:hover{
+    transition:0.5s ease-in;
+    transform: scale(1.1);
 }
 
 @media  screen and (min-width:480px) {
