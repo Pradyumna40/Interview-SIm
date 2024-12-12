@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #c8c6ba);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: scroll;
+
+}
+
+nav {
+    border-bottom: 2px;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav i {
+    height: 50px;
+
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+#logo {
+    fill: black;
+    text-align: top;
+    font-weight: 500;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background: linear-gradient(135deg, #ffffff 40%, #c6bed1 50%);
+    backdrop-filter: blur(20px);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.sidebar li {
+    width: 100%;
+    height: 70px;
+}
+
+.sidebar a {
+    width: 100%;
+
+}
+
+.sidebar a:hover {
+    transform-origin: center;
+    transition: 0.3s ease-in-out;
+    transform: scale3d(1.1);
+}
+
+.menu {
+    display: none;
+}
+
+ul li.menu a i {
+    padding-top: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.close i {
+    cursor: pointer;
+    padding-top: 30px;
+    padding-left: 30px;
+    width: 100%;
+    color: black;
+}
+
+.close :hover {
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+
+.main-box{
+    margin: 50px;
+}
+
+.subscription-box{
+    margin: auto;
+    /* width: 1100px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 1px solid grey; */
+    /* box-shadow: 0.1px 0.1px 5px; */
+}
+
+.sub-box{
+    padding: 15px;
+    margin: 20px;
+    height: fit-content;
+    width: 300px;
+    border: 1px solid grey;
+    box-shadow: 1px 0px 5px;
+    border-radius: 5px;
+    /* background-color: rgb(230, 222, 222); */
+}
+
+.main-box h1,h2{
+    text-align: center;
+}
+
+.main-box p{
+    line-height: 1.7em;
+    font-size: 1.2em;
+}
+
+.main-box button{
+    padding: 5px 30px 5px 30px;
+    background-color: green;
+    color:white;
+    font-size: 1.5em;
+    border-radius: 5px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transition: transform 0.2s linear 0s;
+}
+
+.main-box button:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+@media(max-width:950px){
+    .subscription-box{
+        flex-wrap: wrap;
+    }
+}
