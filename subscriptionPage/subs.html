@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <script
+    src="https://kit.fontawesome.com/8e1bae3994.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="subs.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                    <path
+                        d="M41.883,9.38c-1.092-1.179-2.582-1.855-4.194-1.904c-1.629-0.046-3.171,0.542-4.346,1.667l-0.252,0.241 c-2.551,2.441-2.594,6.42-0.098,9.059C34.932,20.493,36,23.177,36,26c0,3.018-1.197,5.832-3.372,7.926 c-2.173,2.092-5.034,3.175-8.058,3.066c-5.611-0.213-10.35-4.951-10.566-10.618c-0.001-0.019-0.161-1.836,0.338-4.429 c1.164-6.057,5.081-11.229,10.745-14.193l6.002-3.141c0.365-0.191,0.576-0.588,0.53-0.998c-0.047-0.41-0.34-0.749-0.739-0.854 c-2.741-0.724-5.588-0.928-8.461-0.618C11.728,3.307,3.19,11.925,2.118,22.633C1.425,29.57,3.835,36.358,8.731,41.258 c4.347,4.35,10.183,6.741,16.291,6.74c0.772,0,1.551-0.038,2.329-0.115c10.785-1.071,19.416-9.673,20.523-20.451 C48.556,20.809,46.371,14.229,41.883,9.38z">
+                    </path>
+                </svg>
+                <div class="txt">
+                    <h5>Entrevue.AI</h5>
+                </div>
+            </li>
+
+            <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+
+            <li class="hideOnMobile"><a href="#">About</a></li>
+
+            <li class="hideOnMobile"><a href="#">Blog</a></li>
+
+            <li class="hideOnMobile" id="contact"><a href="#">Contact</a></li>
+
+            <li class="hideOnMobile" id="signinBtn"><a href="../SignIn/index.html">Sign In</a></li>
+
+            <li class="menu" onclick="showSidebar()">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </li>
+        </ul>
+
+        <ul class="sidebar">
+            <li class="close" onclick="hideSidebar()"><i class="fa-solid fa-x"></i></li>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">About</a></li>
+
+            <li><a href="#">Blog</a></li>
+
+            <li><a href="#">Contact</a></li>
+
+            <li id="signinBtn"><a href="SignIn/index.html">Sign In</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main-box">
+        <div class="subscription-box">
+            <div class="sub-box">
+                <h1>Free plan</h1>
+                <br>
+                <p>Question bank</p>
+                <p>Mock interviews</p>
+                <p>Analytics</p>
+                <p>Community acess</p>
+                <p>Resources</p>
+                <p>expert Session</p>
+                <p>Certification</p>
+                <br>
+                <h2>0 <i class="fa-solid fa-indian-rupee-sign"></i></h2>
+                <br>
+                <button>claim</button>
+            </div>
+            <div class="sub-box">
+                <h1>Monthly plan</h1>
+                <br>
+                <p>Question bank</p>
+                <p>Mock interviews</p>
+                <p>Analytics</p>
+                <p>Community acess</p>
+                <p>Resources</p>
+                <p>expert Session</p>
+                <p>Certification</p>
+                <br>
+                <h2>300 <i class="fa-solid fa-indian-rupee-sign"></i></h2>
+                <br>
+                <button>pay</button>
+            </div>
+            <div class="sub-box">
+                <h1>Yearly plan</h1>
+                <br>
+                <p>Question bank</p>
+                <p>Mock interviews</p>
+                <p>Analytics</p>
+                <p>Community acess</p>
+                <p>Resources</p>
+                <p>expert Session</p>
+                <p>Certification</p>
+                <br>
+                <h2>3000 <i class="fa-solid fa-indian-rupee-sign"></i></h2>
+                <br>
+                <button>pay</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
